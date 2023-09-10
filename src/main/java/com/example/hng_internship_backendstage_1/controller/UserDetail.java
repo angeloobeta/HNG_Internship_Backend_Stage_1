@@ -7,10 +7,11 @@ import org.springframework.web.bind.annotation.*;
 @RestController
 public class UserDetail {
     @GetMapping("/api")
-    public ApiResponse getDetailByNameAndTrack(@RequestBody User userParameter)
+    public ApiResponse getDetailByNameAndTrack(
+            @RequestParam(name = "slack_name") String userName,
+            @RequestParam(name = "track") String track
+            )
             {
-        String userName = userParameter.getSlack_name();
-        String track = userParameter.getTrack();
         ApiResponse response = new ApiResponse();
         response.setTrack(track);
         response.setSlack_name(userName);
