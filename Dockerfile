@@ -1,5 +1,5 @@
 #FROM ubuntu:latest
-LABEL authors="ifeanyichukwuobeta"
+#LABEL authors="ifeanyichukwuobeta"
 #
 #ENTRYPOINT ["top", "-b"]
 
