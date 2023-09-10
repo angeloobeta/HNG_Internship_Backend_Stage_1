@@ -9,6 +9,6 @@ import lombok.NoArgsConstructor;
 
 @Data
 public class User {
-    private String name;
+    private String slack_name;
     private String track;
 }
